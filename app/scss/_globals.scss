@@ -1,0 +1,91 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  font-size: $font-med;
+  color: $DarkBlue;
+  line-height: 1.4;
+
+  &.noscroll {
+    overflow: hidden;
+  }
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+.container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.flex {
+  display: flex;
+
+  &-jc-sb {
+    justify-content: space-between;
+  }
+
+  &-jc-c {
+    justify-content: center;
+  }
+
+  &-ai-c {
+    align-items: center;
+  }
+}
+
+// Buttons
+
+.button {
+  padding: 0.875rem 3.5875rem;
+  background: linear-gradient(to right, $Teal, $Green);
+  border: 2px;
+}
+
+// Visibility
+.hide-for-mobiletab {
+  // hide for mobile and tab
+  @include breakpoint-down(medium) {
+    display: none;
+  }
+}
+.hide-for-desktop {
+  // hide for desktop widths
+  @include breakpoint-up(large) {
+    display: none;
+  }
+}
+
+.hide-for-desktoptab {
+  @include breakpoint-up(medium) {
+    display: none;
+  }
+}
+
+.hide-for-mobile {
+  @include breakpoint-down(small) {
+    display: none;
+  }
+}
+
+.transform-for-mobile {
+  @include breakpoint-down(small) {
+    transform: scale(0.8);
+    padding: 0;
+  }
+}
