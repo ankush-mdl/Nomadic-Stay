@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "gulp-cli": "^2.3.0"
+  },
+  "name": "nomadicstay",
+  "version": "1.0.0",
+  "description": "New Project",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ankush-mdl/Nomadic-Stay.git"
+  },
+  "author": "Ankush Mondal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ankush-mdl/Nomadic-Stay/issues"
+  },
+  "homepage": "https://github.com/ankush-mdl/Nomadic-Stay#readme"
+}
